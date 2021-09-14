@@ -1,10 +1,12 @@
-import {Fragment} from 'react'
+import {Layout, Profile} from './components'
 
 function GitHubApp() {
   return (
-    <Fragment>
-      <h1>Hello World</h1>
-    </Fragment>
+    <main>
+      <Layout>
+        <Profile/>
+      </Layout>
+    </main>
   )
 }
 
