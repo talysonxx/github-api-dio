@@ -11,7 +11,7 @@ export const Profile = () => {
           <h1>Nome</h1>
           <S.WrapperUserName>
             <h3>User</h3>
-            <span>taysonxx</span>
+            <a href='https://github.com/talysonxx' target='_blank' rel='noreferrer'>taysonxx</a>
           </S.WrapperUserName>
         </div>
 
