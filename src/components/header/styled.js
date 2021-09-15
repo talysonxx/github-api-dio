@@ -15,6 +15,7 @@ export const Wrapper = styled.header`
     height: 35px;
     padding: 5px;
     margin-right: 20px;
+    font-size: 14px;
   }
   button {
     color: #ffff;

@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import GitHubApp from './App'
+// import GitHubApp from './App'
+import {Providers} from './providers'
 
 ReactDOM.render(
   <React.StrictMode>
-    <GitHubApp/>
+    <Providers/>
   </React.StrictMode>,
   document.getElementById('root')
 )

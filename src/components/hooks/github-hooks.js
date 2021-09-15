@@ -1,8 +1,8 @@
 import {useContext} from 'react'
-import { GithubContext } from '..'
+import {GithubContext} from '..'
 
 export const useGithub = () => {
-  const {githubState} = useContext(GithubContext)
+  const {githubState, getUser} = useContext(GithubContext)
 
-  return {githubState}
+  return {githubState, getUser}
 }

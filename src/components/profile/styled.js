@@ -33,14 +33,23 @@ export const WrapperUserName = styled.div`
   align-items: center;
   margin-top: 8px;
 
+  h3 {
+    font-size: 16px;
+  }
+
   a {
     margin-left: 8px;
     color: blue;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
   }
   a:hover {
     text-decoration: underline;
+  }
+  span {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;
   }
 `
 
