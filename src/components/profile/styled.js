@@ -39,6 +39,9 @@ export const WrapperUserName = styled.div`
     font-weight: bold;
     font-size: 18px;
   }
+  a:hover {
+    text-decoration: underline;
+  }
 `
 
 export const WrapperStatusCount = styled.div`
