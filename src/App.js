@@ -1,15 +1,17 @@
-import {Layout, Profile, ResetCSS, Respositories} from './components'
+import {Layout, Profile, ResetCSS, Respositories, GithubProvider} from './components'
 
 function GitHubApp() {
   return (
     <main>
-      <ResetCSS/>
-      
-      <Layout>
-        <Profile/>
+      <GithubProvider>
+        <ResetCSS/>
+        
+        <Layout>
+          <Profile/>
 
-        <Respositories/>
-      </Layout>
+          <Respositories/>
+        </Layout>
+      </GithubProvider>
     </main>
   )
 }

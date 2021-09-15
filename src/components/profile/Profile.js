@@ -1,34 +1,43 @@
 import React from 'react'
 import * as S from './styled'
+import {useGithub} from '../hooks'
 
 export const Profile = () => {
+  const {githubState} = useGithub()
+
   return (
     <S.Wrapper>
-      <S.WrapperImage src='https://avatars.githubusercontent.com/u/79946114?v=4' alt='Avatar do usuário'/>
+      <S.WrapperImage src={githubState.user.avatar_url} alt='Avatar do usuário'/>
+      {/* avatarUrl */}
 
       <S.WrapperInfoUser>
         <div>
-          <h1>Nome</h1>
+          <h1>{githubState.user.login}</h1>
           <S.WrapperUserName>
-            <h3>User</h3>
-            <a href='https://github.com/talysonxx' target='_blank' rel='noreferrer'>taysonxx</a>
+            <h3>Nome de usuário:</h3>
+            <a href={githubState.user.url} target='_blank' rel='noreferrer'>{githubState.user.name}</a>
           </S.WrapperUserName>
         </div>
 
         <S.WrapperStatusCount>
           <div>
             <h4>Seguidores</h4>
-            <span>0</span>
+            <span>{githubState.user.followers}</span>
           </div>
 
           <div>
-            <h4>Starred</h4>
-            <span>3</span>
+            <h4>Seguido</h4>
+            <span>{githubState.user.following}</span>
           </div>
 
           <div>
-            <h4>Seguindo</h4>
-            <span>8</span>
+            <h4>Gists</h4>
+            <span>{githubState.user.public_gists}</span>
+          </div>
+
+          <div>
+            <h4>Repos</h4>
+            <span>{githubState.user.public_repos}</span>
           </div>
         </S.WrapperStatusCount>
       </S.WrapperInfoUser>
