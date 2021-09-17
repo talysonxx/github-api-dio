@@ -1,14 +1,10 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import * as S from './styled'
-import {useGithub} from '../hooks'
+import {useGithub} from '..'
 
 export const Profile = () => {
   const {githubState} = useGithub()
   const {user} = githubState
-
-  useEffect(() => {
-    console.log(githubState.user)
-  }, [githubState.user])
 
   return (
     <S.Wrapper>
