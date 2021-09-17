@@ -1,6 +1,6 @@
-#### Um projeto feito no bootcamp da [dio](https://digitalinnovation.one/) (digital innovation one)
+# Um projeto feito no bootcamp [MRV Front End SPA Developer](https://web.digitalinnovation.one/track/mrv-front-end-spa-developer) da [dio](https://digitalinnovation.one/) (digital innovation one)
 
-#### Usa api do github para buscar por usuários e seus repos
+### Usa api do github para buscar por usuários e seus repos
 
 ###### Meus **contatos**
 
